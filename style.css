@@ -38,8 +38,29 @@ body { font-family: Arial, sans-serif; color: #fff; }
 .web-design-content p { color: grey; font-size: 1.2rem; line-height: 1.6; } 
 
 
+/* Why Choose Us Section */
+.why-choose-us { padding: 60px 20px; background-color: #fff; text-align: center; color: #333; }
+.section-header { margin-bottom: 50px; }
+.why-button { background-color: #ec4c77; color: #fff; border: none; padding: 10px 20px; border-radius: 25px; font-weight: bold; cursor: pointer; margin-bottom: 20px; }
+.why-choose-us h2 { font-size: 24px; font-weight: 700; color: #000; margin-bottom: 40px; }
 
-/* Additional Responsive Adjustments for Other Sections */ 
+/* Row and Column Layout */
+.row { display: flex; justify-content: space-between; flex-wrap: wrap; margin-bottom: 40px; }
+.column { flex: 1; max-width: 45%; min-width: 280px; margin-bottom: 20px; }
+.column img { width: 7.5rem; height: 7.5rem; margin-bottom: 20px; }
+.column h3 { font-size: 20px; font-weight: 600; margin-bottom: 15px; color: #000; }
+.column p { font-size: 16px; color: #333; line-height: 1.5; text-align: justify; }
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    /* Why Choose Us Section */
+    .row { flex-direction: column; align-items: center;}
+    .row.reverse { flex-direction: column-reverse; }
+    .column { max-width: 90%; }
+    .column img { width: 6rem; height: 6rem; }
+}
 @media (max-width: 768px) { 
     /* Mobile App Section */ 
     .mobile-app { padding: 0; } 
@@ -47,7 +68,7 @@ body { font-family: Arial, sans-serif; color: #fff; }
     .cards { margin-top: 2rem; } 
 
     /* Services Section */ 
-    .services-section { padding: 10px; } 
+    .services-section { padding: 10px; margin-top: 2.5rem;} 
     .section-title { width: 100%; font-size: 2rem; } 
 
     /* Web Design Section */
@@ -57,14 +78,28 @@ body { font-family: Arial, sans-serif; color: #fff; }
     .web-design-content { text-align: justify; padding: 0 10px; } 
     .web-design-content h2 { font-size: 1.8rem; } 
     .web-design-content p { font-size: 1rem;} 
+
+    /* Why Choose Us Section */
+    .why-choose-us{margin-top: 1rem; padding-top: 0;}
+    .row.reverse { flex-direction: column-reverse; } 
+    .column { max-width: 100%; } 
+    .column img { width: 5rem; height: 5rem; } 
+    .column h3 { font-size: 18px; } 
+    .column p { font-size: 14px; }
 } 
 @media (max-width: 480px) { 
     /* Mobile App Section */ 
     .mobile-app { padding: 0; } 
     .mobile-app h1 { font-size: 1.5rem; } 
     .cards { margin-top: 1rem; } 
-    
+
     /* Services Section */
     .services-section { padding: 10px; } 
     .section-title { width: 100%; font-size: 1.2rem; } 
+
+    /* Why Choose Us Section */
+    .why-choose-us h2 { font-size: 20px; } 
+    .column img { width: 4rem; height: 4rem; } 
+    .column h3 { font-size: 16px; } 
+    .column p { font-size: 12px; }
 }
