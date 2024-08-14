@@ -18,7 +18,7 @@ body { font-family: Arial, sans-serif; color: #fff; }
 /* Services Section */ 
 .services-section { padding: 70px 20px; text-align: center; background-color: #fbf9f8; } 
 .section-title { font-size: 2rem; margin-bottom: 40px; font-weight: 500; color: black; } 
-.services-button { padding: 7px 22px; border-radius: 25px; background-color: #ec4c77; border: 1px solid #ec4c77; color: white; font-weight: 600; } 
+.services-button { padding: 5px 20px; border-radius: 25px; background-color: #ec4c77; border: 1px solid #ec4c77; color: white; font-weight: 600; } 
 .container { max-width: 1200px; margin: 0 auto; } 
 .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; } 
 .service-card { background-color: #fff; border-radius: 0 0 10px 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center; transition: transform 0.3s ease-in-out; border-top: 10px solid #ec4c77; color: black; } 
@@ -41,7 +41,7 @@ body { font-family: Arial, sans-serif; color: #fff; }
 /* Why Choose Us Section */
 .why-choose-us { padding: 60px 20px; background-color: #fff; text-align: center; color: #333; }
 .section-header { margin-bottom: 50px; }
-.why-button { background-color: #ec4c77; color: #fff; border: none; padding: 10px 20px; border-radius: 25px; font-weight: bold; cursor: pointer; margin-bottom: 20px; }
+.why-button { background-color: #ec4c77; color: #fff; border: none; padding: 5px 20px; border-radius: 25px; font-weight: bold; cursor: pointer; margin-bottom: 20px; }
 .why-choose-us h2 { font-size: 24px; font-weight: 700; color: #000; margin-bottom: 40px; }
 
 /* Row and Column Layout */
@@ -55,11 +55,23 @@ body { font-family: Arial, sans-serif; color: #fff; }
 /* Project Section */
 .projects-section { text-align: center; padding: 50px 20px; background-color: #f8f4eb; padding-bottom: 7rem; } 
 .projects-header { margin-top: 3rem; margin-bottom: 30px; } 
-.projects-button { background-color: #ec4c77; color: white; border: none; border-radius: 25px; padding: 10px 20px; font-size: 16px; font-weight: 600; cursor: pointer; } 
+.projects-button { background-color: #ec4c77; color: white; border: none; border-radius: 25px ;padding: 5px 20px; font-size: 16px; font-weight: 600; cursor: pointer; } 
 .projects-header h1 { margin-top: 2rem; font-size: 2rem; font-weight: 600; color: black; } 
 .projects-list { display: flex; justify-content: space-around; margin-top: 30px; } 
 .project-item { font-size: 1rem; color: #666; text-align: justify; }
 
+/* Our Team Section */
+.team-section { text-align: center; padding: 50px 20px; background-color: white; } 
+.section-header { margin-bottom: 40px; } 
+.section-header .section-title { background-color: #ec4c77; color: white; padding: 5px 20px; border-radius: 25px; display: inline-block; font-size: 1rem; margin-bottom: 20px; border: 1px solid #ec4c77; font-weight: 600; } 
+.section-header h2 { font-size: 2.5rem; margin-top: 0.5rem; margin-bottom: 10px; color: black; } 
+.underline { width: 180px; height: 2px; background-color: #ec4c77; margin: 0 auto; margin-top: 25px; } 
+.team-members { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; } 
+.team-member { text-align: center; max-width: 300px; } 
+.team-member img { width: 210px; height: 210px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; transition: transform 0.3s ease; } 
+.team-member img:hover { transform: scale(1.1); } 
+.team-member h3 { font-size: 1.2rem; margin-bottom: 5px; color: black; } 
+.team-member p { font-size: 1rem; color: #666; }
 
 
 
@@ -81,6 +93,7 @@ body { font-family: Arial, sans-serif; color: #fff; }
     /* Services Section */ 
     .services-section { padding: 10px; margin-top: 2.5rem;} 
     .section-title { width: 100%; font-size: 2rem; } 
+    .services-button{ width: 100%; display: inline-block; }
 
     /* Web Design Section */
     .web-design { margin-top: 2rem; } 
@@ -97,6 +110,13 @@ body { font-family: Arial, sans-serif; color: #fff; }
     .column img { width: 5rem; height: 5rem; } 
     .column h3 { font-size: 18px; } 
     .column p { font-size: 14px; }
+    .why-button{ width: 100%; display: inline-block; }
+
+    /* Project Section */
+    .projects-button{ width: 100%; display: inline-block; }
+
+    /* Team Section */
+    .section-header h2 { font-size: 2rem; }
 } 
 @media (max-width: 480px) { 
     /* Mobile App Section */ 
@@ -113,4 +133,7 @@ body { font-family: Arial, sans-serif; color: #fff; }
     .column img { width: 4rem; height: 4rem; } 
     .column h3 { font-size: 16px; } 
     .column p { font-size: 12px; }
+
+    /* Team Section */
+    .section-header h2 { font-size: 1.5rem; }
 }
